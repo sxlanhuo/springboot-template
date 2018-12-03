@@ -4,12 +4,12 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>me.ffs.www</groupId>
-	<artifactId>micro_activity_reserve</artifactId>
+	<artifactId>zsh_pay_pushCoupons</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
 
-	<name>micro_activity_reserve</name>
-	<description>小活动报名预定系统</description>
+	<name>zsh_pay_pushCoupons</name>
+	<description>中石化车主卡项目前端缴费流程</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -260,6 +260,10 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				<configuration>
+					<!-- 同时把本地jar包也一同打包-->
+					<includeSystemScope>true</includeSystemScope>
+				</configuration>
 			</plugin>
 
 			<plugin>
